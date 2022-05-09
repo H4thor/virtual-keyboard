@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./fonts/noto-sans.woff') format('woff'), 
+       url('../fonts/noto-sans.woff2') format('woff2'); 
+}
+
+body {
+  font-family: 'Noto Sans';
+  font-size: 18px;
+  text-align: center;
+  line-height: 41px;
+  background-color: darksalmon;
+}
+
+.keyboard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  width: 769px;
+  height: 269px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px rgb(123, 15, 15) solid;
+  background-color: aqua;
+}
+
+.key {
+  width: 45px;
+  height: 45px;
+  border: 2px rgb(123, 15, 15) solid;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.key:hover {
+  background: blue;
+  transform: scale(0.97);
+  
+}
+
+.key-double {
+  width: 95px;
+}
+
+.keyspace {
+  width: 345px;
+}
+
+.key-active {
+  background: green;
+  color: gold;
+  transform: scale(0.97);
+}
+
+.key-active:hover {
+  background: green;
+  color: gold;
+}
+
+#text-field {
+  margin-top: 20px;
+  padding: 5px;
+}
+
+.title {
+  margin-top: 20px;
+  letter-spacing: 0.05em;
+  word-spacing: 0.2em;
+}
+
+.description {
+  margin-top: 30px;
+}
